@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Electroreparaciones GR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2d3d, #34495e);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1f2d3d;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .destacado {
+      background: #27ae60;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ddd;
+      font-size: 14px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 22px;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Electroreparaciones GR</h1>
+  <p>Servicio técnico</p>
+</header>
+
+<section>
+
+  <div class="destacado">
+    ⚡ Diagnóstico rápido • Presupuesto sin cargo • Atención personalizada
+  </div>
+
+  <div class="card">
+    <h2>🔧 ¿Qué reparamos?</h2>
+    <ul>
+      <li>Microondas</li>
+      <li>Hornos eléctricos</li>
+      <li>Pavas eléctricas</li>
+      <li>Licuadoras y batidoras</li>
+      <li>Planchas</li>
+      <li>Ventiladores</li>
+      <li>Pequeños electrodomésticos</li>
+    </ul>
+    <p><strong>No trabajamos con heladeras ni lavarropas.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>🏠 Atención personalizada</h2>
+    <p>Florencio Varela, Berazategui y alrededores.</p>
+  </div>
+
+  <div class="card">
+    <h2>⭐ ¿Por qué elegirnos?</h2>
+    <ul>
+      <li>✔ Reparaciones garantidas</li>
+      <li>✔ Atención rápida</li>
+      <li>✔ Precios accesibles</li>
+      <li>✔ Experiencia en el rubro</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📋 Solicitar reparación</h2>
+
+    <form onsubmit="enviarWhatsApp(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="text" id="zona" placeholder="Tu zona" required>
+      <input type="text" id="equipo" placeholder="Electrodoméstico" required>
+      <textarea id="problema" placeholder="¿Qué problema tiene?" required></textarea>
+
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Electroreparaciones GR</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5491138915660">💬</a>
+
+<script>
+function enviarWhatsApp(e) {
+  e.preventDefault();
+
+  let nombre = document.getElementById("nombre").value;
+  let zona = document.getElementById("zona").value;
+  let equipo = document.getElementById("equipo").value;
+  let problema = document.getElementById("problema").value;
+
+  let mensaje = `Hola, soy ${nombre}.
+Zona: ${zona}
+Equipo: ${equipo}
+Problema: ${problema}`;
+
+  let url = "https://wa.me/5491138915660?text=" + encodeURIComponent(mensaje);
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Electroreparaciones GR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2d3d, #34495e);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1f2d3d;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .destacado {
+      background: #27ae60;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ddd;
+      font-size: 14px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 22px;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Electroreparaciones GR</h1>
+  <p>Servicio técnico</p>
+</header>
+
+<section>
+
+  <div class="destacado">
+    ⚡ Diagnóstico rápido • Presupuesto sin cargo • Atención personalizada
+  </div>
+
+  <div class="card">
+    <h2>🔧 ¿Qué reparamos?</h2>
+    <ul>
+      <li>Microondas</li>
+      <li>Hornos eléctricos</li>
+      <li>Pavas eléctricas</li>
+      <li>Licuadoras y batidoras</li>
+      <li>Planchas</li>
+      <li>Ventiladores</li>
+      <li>Pequeños electrodomésticos</li>
+    </ul>
+    <p><strong>No trabajamos con heladeras ni lavarropas.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>🏠 Atención personalizada</h2>
+    <p>Florencio Varela, Berazategui y alrededores.</p>
+  </div>
+
+  <div class="card">
+    <h2>⭐ ¿Por qué elegirnos?</h2>
+    <ul>
+      <li>✔ Reparaciones garantidas</li>
+      <li>✔ Atención rápida</li>
+      <li>✔ Precios accesibles</li>
+      <li>✔ Experiencia en el rubro</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📋 Solicitar reparación</h2>
+
+    <form onsubmit="enviarWhatsApp(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="text" id="zona" placeholder="Tu zona" required>
+      <input type="text" id="equipo" placeholder="Electrodoméstico" required>
+      <textarea id="problema" placeholder="¿Qué problema tiene?" required></textarea>
+
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Electroreparaciones GR</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5491138915660">💬</a>
+
+<script>
+function enviarWhatsApp(e) {
+  e.preventDefault();
+
+  let nombre = document.getElementById("nombre").value;
+  let zona = document.getElementById("zona").value;
+  let equipo = document.getElementById("equipo").value;
+  let problema = document.getElementById("problema").value;
+
+  let mensaje = `Hola, soy ${nombre}.
+Zona: ${zona}
+Equipo: ${equipo}
+Problema: ${problema}`;
+
+  let url = "https://wa.me/5491138915660?text=" + encodeURIComponent(mensaje);
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
